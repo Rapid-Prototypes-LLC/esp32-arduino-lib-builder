@@ -41,10 +41,6 @@ AR_LIBS_REPO="$AR_USER/esp32-arduino-lib-builder"
 AR_REPO_URL="git@github.com:$AR_REPO.git"
 IDF_REPO_URL="git@github.com:$IDF_REPO.git"
 AR_LIBS_REPO_URL="git@github.com:$AR_LIBS_REPO.git"
-if [ -n "$GITHUB_TOKEN" ]; then
-    AR_REPO_URL="https://$GITHUB_TOKEN@github.com/$AR_REPO.git"
-    AR_LIBS_REPO_URL="https://$GITHUB_TOKEN@github.com/$AR_LIBS_REPO.git"
-fi
 
 AR_ROOT="$PWD"
 AR_COMPS="$AR_ROOT/components"
